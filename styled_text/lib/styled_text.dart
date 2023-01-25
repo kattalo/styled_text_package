@@ -385,8 +385,7 @@ class _StyledTextState extends State<StyledText> {
         textWidthBasis:
             widget.textWidthBasis ?? defaultTextStyle.textWidthBasis,
         textHeightBehavior: widget.textHeightBehavior ??
-            defaultTextStyle.textHeightBehavior ??
-            DefaultTextHeightBehavior.of(context),
+            defaultTextStyle.textHeightBehavior,
         text: span,
         selectionRegistrar: registrar,
         selectionColor: DefaultSelectionStyle.of(context).selectionColor,
@@ -418,8 +417,7 @@ class _StyledTextState extends State<StyledText> {
         textWidthBasis:
             widget.textWidthBasis ?? defaultTextStyle.textWidthBasis,
         textHeightBehavior: widget.textHeightBehavior ??
-            defaultTextStyle.textHeightBehavior ??
-            DefaultTextHeightBehavior.of(context),
+            defaultTextStyle.textHeightBehavior,
         textAlign:
             widget.textAlign ?? defaultTextStyle.textAlign ?? TextAlign.start,
         textDirection: widget.textDirection,
